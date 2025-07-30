@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #FDF4F8; /* Fondo muy claro, casi blanco con un toque de rosa */
+    background-color: #F4F8FB; /* Fondo muy claro, casi blanco con un toque de celeste */
     margin: 0;
     padding: 20px;
     color: #3D3D3D; /* Gris oscuro suave para el texto principal */
@@ -18,7 +18,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #E68FAC; /* Rosa pastel medio para el título */
+    color: #6DA0CC; /* Celeste pastel medio para el título */
     margin-bottom: 40px;
     font-size: 2.8em; /* Título un poco más grande */
     position: relative;
@@ -34,7 +34,7 @@ h1::after {
     transform: translateX(-50%);
     width: 100px; /* Línea del título un poco más larga */
     height: 5px; /* Línea del título un poco más gruesa */
-    background-color: #FBC5EA; /* Rosa pastel más claro para la línea */
+    background-color: #A0D2EB; /* Celeste pastel más claro para la línea */
     border-radius: 3px;
 }
 
@@ -49,7 +49,7 @@ h1::after {
     flex: 1;
     min-width: 280px;
     max-width: 320px; /* Ancho máximo para columnas */
-    background-color: #FCEEF5; /* Fondo rosa pastel muy claro para los semestres */
+    background-color: #EBF4FA; /* Fondo celeste pastel muy claro para los semestres */
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
     overflow: hidden;
@@ -62,7 +62,7 @@ h1::after {
 }
 
 .semester h2 {
-    background-color: #ECB3D7; /* Rosa pastel vibrante para los títulos de semestre */
+    background-color: #8DC7DC; /* Celeste pastel vibrante para los títulos de semestre */
     color: white;
     padding: 18px 20px; /* Más padding para los títulos */
     margin: 0;
@@ -81,7 +81,7 @@ h1::after {
 
 .course-item {
     background-color: #FFFFFF; /* Fondo blanco para los ramos */
-    border: 1px solid #FADDEC; /* Borde rosa muy sutil */
+    border: 1px solid #DCEEF8; /* Borde celeste muy sutil */
     border-radius: 8px; /* Bordes más redondeados */
     padding: 14px 18px; /* Más padding dentro de cada ramo */
     margin-bottom: 12px; /* Más espacio entre ramos */
@@ -99,13 +99,13 @@ h1::after {
 }
 
 .course-item:hover:not(.approved):not(.blocked) {
-    background-color: #FFF3F8; /* Rosa muy claro al pasar el ratón */
-    border-color: #F7CCEB; /* Borde rosa claro al pasar el ratón */
+    background-color: #EBF7FE; /* Celeste muy claro al pasar el ratón */
+    border-color: #C1E1F3; /* Borde celeste claro al pasar el ratón */
     transform: translateX(5px); /* Pequeño movimiento hacia la derecha */
 }
 
 .course-item.approved {
-    background-color: #DDEEDD; /* Verde pálido suave para aprobado */
+    background-color: #DDEEDD; /* Verde pálido suave para aprobado (mantiene contraste) */
     color: #4CAF50; /* Verde para el texto aprobado */
     text-decoration: line-through;
     border-color: #C8E0C8; /* Borde verde claro */
@@ -114,7 +114,7 @@ h1::after {
 }
 
 .course-item.blocked {
-    background-color: #FBE6EA; /* Rosa pastel suave para bloqueado */
+    background-color: #FBE6EA; /* Rosa pastel suave para bloqueado (mantiene el contraste) */
     color: #B24040; /* Rojo oscuro suave para el texto bloqueado */
     border-color: #F7CED5; /* Borde rosa claro */
     cursor: not-allowed;
