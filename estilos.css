@@ -11,14 +11,14 @@ body {
     max-width: 1300px;
     margin: 20px auto;
     padding: 30px;
-    background-color: #ebf4fa; /* Fondo blanco puro para el contenedor principal */
+    background-color: #ffe2de; /* Fondo blanco puro para el contenedor principal */
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Sombra un poco más pronunciada */
 }
 
 h1 {
     text-align: center;
-    color: #e3eef7; /* Celeste pastel medio para el título */
+    color: #ffc0b9; /* Celeste pastel medio para el título */
     margin-bottom: 40px;
     font-size: 2.8em; /* Título un poco más grande */
     position: relative;
