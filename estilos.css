@@ -1,21 +1,16 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    /* Configuración de la imagen de fondo */
-    background-image: url('https://i.pinimg.com/736x/fd/fc/50/fdfc505cadfc0d8b16ed7dc3afbc4fb0.jpg'); 
-    background-repeat: repeat;      /* La imagen se repetirá */
-    background-size: auto;          /* Usará el tamaño original de la imagen */
-    background-position: top left;  /* Empezará a repetirse desde la esquina superior izquierda */
-    background-attachment: scroll;  /* El fondo se moverá con el scroll del contenido */
-    
-    /* Color de respaldo */
-    background-color: #121212;      /* Manteniendo el color base oscuro de la paleta Batman */
-    
-    margin: 0;
-    padding: 20px;
-    color: #E0E0E0;                  /* Asegúrate de que el color del texto contraste con este patrón */
-    line-height: 1.6;
-}
+    /* Ruta de tu imagen */
+    background-image: url(https://i.pinimg.com/736x/01/a1/4d/01a14d2c259dbb2226a6ab3eaa8d15b1.jpg); 
+    /* No repetir la imagen */
+    background-repeat: no-repeat; 
+    /* Cubrir todo el fondo sin distorsionar la imagen */
+    background-size: cover; 
+    /* Centrar la imagen en el fondo */
+    background-position: center center; 
+    /* Fija la imagen para que no se mueva al hacer scroll */
+    background-attachment: fixed; 
+    /* Color de respaldo si la imagen no carga o para espacios vacíos */
+    background-color: #f4f8fb; 
 
 
 .container {
@@ -73,7 +68,7 @@ h1::after {
 }
 
 .semester h2 {
-    background-color: ##f6d59e; /* Celeste pastel vibrante para los títulos de semestre */
+    background-color: #f6d59e; /* Celeste pastel vibrante para los títulos de semestre */
     color: white;
     padding: 18px 20px; /* Más padding para los títulos */
     margin: 0;
@@ -92,7 +87,7 @@ h1::after {
 
 .course-item {
     background-color: #ffe2de; /* Fondo blanco para los ramos */
-    border: 1px solid #DCEEF8; /* Borde celeste muy sutil */
+    border: 1px solid #ffc0b9; /* Borde celeste muy sutil */
     border-radius: 8px; /* Bordes más redondeados */
     padding: 14px 18px; /* Más padding dentro de cada ramo */
     margin-bottom: 12px; /* Más espacio entre ramos */
