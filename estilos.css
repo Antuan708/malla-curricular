@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffc0b9; /* Fondo muy claro, casi blanco con un toque de celeste */
+    background-color: #fbece9; /* Fondo muy claro, casi blanco con un toque de celeste */
     margin: 0;
     padding: 20px;
     color: #3D3D3D; /* Gris oscuro suave para el texto principal */
@@ -11,7 +11,7 @@ body {
     max-width: 1300px;
     margin: 20px auto;
     padding: 30px;
-    background-color: #ffc0b9; /* Fondo blanco puro para el contenedor principal */
+    background-color: #ebf4fa; /* Fondo blanco puro para el contenedor principal */
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Sombra un poco más pronunciada */
 }
@@ -49,7 +49,7 @@ h1::after {
     flex: 1;
     min-width: 280px;
     max-width: 320px; /* Ancho máximo para columnas */
-    background-color: #a0d2eb; /* Fondo celeste pastel muy claro para los semestres */
+    background-color: #ffc0b9; /* Fondo celeste pastel muy claro para los semestres */
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
     overflow: hidden;
@@ -115,8 +115,8 @@ h1::after {
 
 .course-item.blocked {
     background-color: #acb3b8; /* Rosa pastel suave para bloqueado (mantiene el contraste) */
-    color: #252a2e; /* Rojo oscuro suave para el texto bloqueado */
-    border-color: #252a2e5; /* Borde rosa claro */
+    color: #5c6385; /* Rojo oscuro suave para el texto bloqueado */
+    border-color: #5c6385; /* Borde rosa claro */
     cursor: not-allowed;
     opacity: 0.7;
 }
