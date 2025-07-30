@@ -1,21 +1,22 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-    /* Configuración de la imagen de fondo */
-    background-image: url('https://i.pinimg.com/736x/42/01/65/4201653c297b6ed4c37199979b0b8ab7.jpg'); 
-    background-repeat: no-repeat; /* Para que la imagen no se repita */
-    background-size: cover;      /* Para que la imagen cubra todo el fondo */
-    background-position: center center; /* Para centrar la imagen */
-    background-attachment: fixed; /* Para que la imagen se quede fija al hacer scroll */
+    /* Configuration for the background image */
+    background-image: url('https://i.pinimg.com/736x/21/6b/60/216b6052a6b681db46cf45052119405f.jpg'); 
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;      /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
     
-    /* Color de respaldo si la imagen no carga, o para partes no cubiertas */
-    background-color: #ffe2de; /* O puedes elegir un color que combine con la imagen */
+    /* Fallback color in case the image doesn't load, or for uncovered areas */
+    background-color: #F4F8FB; /* You might want to pick a color that complements the new image */
     
     margin: 0;
     padding: 20px;
-    color: #3D3D3D; /* Asegúrate de que este color de texto contraste con la imagen */
+    color: #3D3D3D; /* Make sure this text color contrasts well with your new image */
     line-height: 1.6;
 }
+
 
 .container {
     max-width: 1300px;
