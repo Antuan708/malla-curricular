@@ -1,6 +1,6 @@
 body {
     /* Ruta de tu imagen */
-    background-image: url(https://i.pinimg.com/736x/01/a1/4d/01a14d2c259dbb2226a6ab3eaa8d15b1.jpg); 
+    background-image: url
     /* No repetir la imagen */
     background-repeat: no-repeat; 
     /* Cubrir todo el fondo sin distorsionar la imagen */
@@ -10,7 +10,7 @@ body {
     /* Fija la imagen para que no se mueva al hacer scroll */
     background-attachment: fixed; 
     /* Color de respaldo si la imagen no carga o para espacios vacíos */
-    background-color: #f4f8fb; 
+    background-color: #ffc0b9; 
 
 
 .container {
@@ -68,7 +68,7 @@ h1::after {
 }
 
 .semester h2 {
-    background-color: #f6d59e; /* Celeste pastel vibrante para los títulos de semestre */
+    background-color: #ffc0b9; /* Celeste pastel vibrante para los títulos de semestre */
     color: white;
     padding: 18px 20px; /* Más padding para los títulos */
     margin: 0;
