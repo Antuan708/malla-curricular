@@ -1,1 +1,233 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F0F7; /* Fondo suave rosa pálido */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
 
+.container {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #FFFFFF; /* Fondo blanco para el contenedor principal */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #C060A1; /* Rosa oscuro para el título */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #F7B7D3; /* Rosa claro para la línea del título */
+    border-radius: 2px;
+}
+
+#curriculum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.semester {
+    flex: 1;
+    min-width: 280px;
+    background-color: #FCE8F0; /* Fondo más claro para los semestres */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.semester:hover {
+    transform: translateY(-5px);
+}
+
+.semester h2 {
+    background-color: #D375B8; /* Rosa medio para los títulos de semestre */
+    color: white;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 1.4em;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.courses {
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+}
+
+.course-item {
+    background-color: #FFFFFF; /* Fondo blanco para los ramos */
+    border: 1px solid #F5DDE7; /* Borde rosa muy claro */
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.course-item:last-child {
+    margin-bottom: 0;
+}
+
+.course-item:hover:not(.approved):not(.blocked) {
+    background-color: #FFEBF3; /* Rosa muy claro al pasar el ratón */
+    border-color: #F7B7D3; /* Borde rosa claro al pasar el ratón */
+}
+
+.course-item.approved {
+    background-color: #E2F0D9; /* Verde pálido para aprobado (contraste con el rosa) */
+    color: #4CAF50; /* Verde más oscuro para el texto aprobado */
+    text-decoration: line-through;
+    border-color: #C8E6C9; /* Borde verde claro */
+    cursor: default;
+    opacity: 0.8;
+}
+
+.course-item.blocked {
+    background-color: #FDE2E7; /* Rosa pálido para bloqueado */
+    color: #B71C1C; /* Rojo oscuro para el texto bloqueado */
+    border-color: #FBCDCF; /* Borde rojo claro */
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.course-item.blocked::after {
+    content: '🔒';
+    margin-left: 10px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #888;
+}
+
+#modal-message {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    #curriculum {
+        gap: 20px;
+    }
+
+    .semester {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .semester {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    #curriculum {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .semester h2 {
+        font-size: 1.2em;
+    }
+
+    .course-item {
+        font-size: 0.9em;
+        padding: 10px 12px;
+    }
+}
