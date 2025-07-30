@@ -62,7 +62,7 @@ h1::after {
 }
 
 .semester h2 {
-    background-color: #8DC7DC; /* Celeste pastel vibrante para los títulos de semestre */
+    background-color: ##e3eef7; /* Celeste pastel vibrante para los títulos de semestre */
     color: white;
     padding: 18px 20px; /* Más padding para los títulos */
     margin: 0;
@@ -80,7 +80,7 @@ h1::after {
 }
 
 .course-item {
-    background-color: #FFFFFF; /* Fondo blanco para los ramos */
+    background-color: #ffe2de; /* Fondo blanco para los ramos */
     border: 1px solid #DCEEF8; /* Borde celeste muy sutil */
     border-radius: 8px; /* Bordes más redondeados */
     padding: 14px 18px; /* Más padding dentro de cada ramo */
@@ -99,14 +99,14 @@ h1::after {
 }
 
 .course-item:hover:not(.approved):not(.blocked) {
-    background-color: #EBF7FE; /* Celeste muy claro al pasar el ratón */
+    background-color: #FFFFFF; /* Celeste muy claro al pasar el ratón */
     border-color: #C1E1F3; /* Borde celeste claro al pasar el ratón */
     transform: translateX(5px); /* Pequeño movimiento hacia la derecha */
 }
 
 .course-item.approved {
-    background-color: #DDEEDD; /* Verde pálido suave para aprobado (mantiene contraste) */
-    color: #4CAF50; /* Verde para el texto aprobado */
+    background-color: #ebf4fa; /* Verde pálido suave para aprobado (mantiene contraste) */
+    color: #a7d7ed; /* Verde para el texto aprobado */
     text-decoration: line-through;
     border-color: #C8E0C8; /* Borde verde claro */
     cursor: default;
@@ -114,7 +114,7 @@ h1::after {
 }
 
 .course-item.blocked {
-    background-color: #FBE6EA; /* Rosa pastel suave para bloqueado (mantiene el contraste) */
+    background-color: #acb3b8; /* Rosa pastel suave para bloqueado (mantiene el contraste) */
     color: #B24040; /* Rojo oscuro suave para el texto bloqueado */
     border-color: #F7CED5; /* Borde rosa claro */
     cursor: not-allowed;
