@@ -1,19 +1,19 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-    /* Configuration for the background image */
-    background-image: url('https://i.pinimg.com/736x/21/6b/60/216b6052a6b681db46cf45052119405f.jpg'); 
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-size: cover;      /* Ensures the image covers the entire background */
-    background-position: center center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    /* Configuración de la imagen de fondo */
+    background-image: url('https://i.pinimg.com/1200x/c3/cd/b5/c3cdb5fef00ce40c345d2bc7138d7afb.jpg'); 
+    background-repeat: repeat;      /* La imagen se repetirá */
+    background-size: auto;          /* Usará el tamaño original de la imagen */
+    background-position: top left;  /* Empezará a repetirse desde la esquina superior izquierda */
+    background-attachment: scroll;  /* El fondo se moverá con el scroll del contenido */
     
-    /* Fallback color in case the image doesn't load, or for uncovered areas */
-    background-color: #F4F8FB; /* You might want to pick a color that complements the new image */
+    /* Color de respaldo */
+    background-color: #121212;      /* Manteniendo el color base oscuro de la paleta Batman */
     
     margin: 0;
     padding: 20px;
-    color: #3D3D3D; /* Make sure this text color contrasts well with your new image */
+    color: #E0E0E0;                  /* Asegúrate de que el color del texto contraste con este patrón */
     line-height: 1.6;
 }
 
