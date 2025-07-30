@@ -1,9 +1,9 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F8F0F7; /* Fondo suave rosa pálido */
+    background-color: #FDF4F8; /* Fondo muy claro, casi blanco con un toque de rosa */
     margin: 0;
     padding: 20px;
-    color: #333;
+    color: #3D3D3D; /* Gris oscuro suave para el texto principal */
     line-height: 1.6;
 }
 
@@ -11,18 +11,19 @@ body {
     max-width: 1300px;
     margin: 20px auto;
     padding: 30px;
-    background-color: #FFFFFF; /* Fondo blanco para el contenedor principal */
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF; /* Fondo blanco puro para el contenedor principal */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Sombra un poco más pronunciada */
 }
 
 h1 {
     text-align: center;
-    color: #C060A1; /* Rosa oscuro para el título */
+    color: #E68FAC; /* Rosa pastel medio para el título */
     margin-bottom: 40px;
-    font-size: 2.5em;
+    font-size: 2.8em; /* Título un poco más grande */
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 15px; /* Más espacio debajo de la línea */
+    font-weight: 600; /* Un poco más de grosor */
 }
 
 h1::after {
@@ -31,63 +32,66 @@ h1::after {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: #F7B7D3; /* Rosa claro para la línea del título */
-    border-radius: 2px;
+    width: 100px; /* Línea del título un poco más larga */
+    height: 5px; /* Línea del título un poco más gruesa */
+    background-color: #FBC5EA; /* Rosa pastel más claro para la línea */
+    border-radius: 3px;
 }
 
 #curriculum {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 30px; /* Más espacio entre semestres */
 }
 
 .semester {
     flex: 1;
     min-width: 280px;
-    background-color: #FCE8F0; /* Fondo más claro para los semestres */
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 320px; /* Ancho máximo para columnas */
+    background-color: #FCEEF5; /* Fondo rosa pastel muy claro para los semestres */
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
     overflow: hidden;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .semester:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* Elevación más notable al pasar el ratón */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .semester h2 {
-    background-color: #D375B8; /* Rosa medio para los títulos de semestre */
+    background-color: #ECB3D7; /* Rosa pastel vibrante para los títulos de semestre */
     color: white;
-    padding: 15px 20px;
+    padding: 18px 20px; /* Más padding para los títulos */
     margin: 0;
-    font-size: 1.4em;
+    font-size: 1.6em; /* Títulos de semestre un poco más grandes */
     text-align: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 500;
 }
 
 .courses {
-    padding: 15px;
+    padding: 20px; /* Más padding para la lista de ramos */
     list-style: none;
     margin: 0;
 }
 
 .course-item {
     background-color: #FFFFFF; /* Fondo blanco para los ramos */
-    border: 1px solid #F5DDE7; /* Borde rosa muy claro */
-    border-radius: 5px;
-    padding: 12px 15px;
-    margin-bottom: 10px;
+    border: 1px solid #FADDEC; /* Borde rosa muy sutil */
+    border-radius: 8px; /* Bordes más redondeados */
+    padding: 14px 18px; /* Más padding dentro de cada ramo */
+    margin-bottom: 12px; /* Más espacio entre ramos */
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.95em;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    font-size: 1em; /* Tamaño de fuente ligeramente mayor */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .course-item:last-child {
@@ -95,23 +99,24 @@ h1::after {
 }
 
 .course-item:hover:not(.approved):not(.blocked) {
-    background-color: #FFEBF3; /* Rosa muy claro al pasar el ratón */
-    border-color: #F7B7D3; /* Borde rosa claro al pasar el ratón */
+    background-color: #FFF3F8; /* Rosa muy claro al pasar el ratón */
+    border-color: #F7CCEB; /* Borde rosa claro al pasar el ratón */
+    transform: translateX(5px); /* Pequeño movimiento hacia la derecha */
 }
 
 .course-item.approved {
-    background-color: #E2F0D9; /* Verde pálido para aprobado (contraste con el rosa) */
-    color: #4CAF50; /* Verde más oscuro para el texto aprobado */
+    background-color: #DDEEDD; /* Verde pálido suave para aprobado */
+    color: #4CAF50; /* Verde para el texto aprobado */
     text-decoration: line-through;
-    border-color: #C8E6C9; /* Borde verde claro */
+    border-color: #C8E0C8; /* Borde verde claro */
     cursor: default;
     opacity: 0.8;
 }
 
 .course-item.blocked {
-    background-color: #FDE2E7; /* Rosa pálido para bloqueado */
-    color: #B71C1C; /* Rojo oscuro para el texto bloqueado */
-    border-color: #FBCDCF; /* Borde rojo claro */
+    background-color: #FBE6EA; /* Rosa pastel suave para bloqueado */
+    color: #B24040; /* Rojo oscuro suave para el texto bloqueado */
+    border-color: #F7CED5; /* Borde rosa claro */
     cursor: not-allowed;
     opacity: 0.7;
 }
@@ -119,6 +124,7 @@ h1::after {
 .course-item.blocked::after {
     content: '🔒';
     margin-left: 10px;
+    font-size: 0.9em; /* Icono de candado ligeramente más pequeño */
 }
 
 /* Modal Styling */
@@ -131,49 +137,50 @@ h1::after {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurecimiento del fondo menos intenso */
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(3px); /* Efecto de desenfoque al fondo */
 }
 
 .modal-content {
     background-color: #fff;
     margin: auto;
-    padding: 30px;
-    border-radius: 8px;
+    padding: 35px; /* Más padding en el modal */
+    border-radius: 10px;
     width: 90%;
-    max-width: 500px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 550px; /* Modal un poco más grande */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
     position: relative;
     animation: fadeIn 0.3s ease-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
+    from { opacity: 0; transform: translateY(-30px); } /* Animación más pronunciada */
     to { opacity: 1; transform: translateY(0); }
 }
 
 .close-button {
-    color: #aaa;
+    color: #999; /* Gris suave para el botón de cerrar */
     float: right;
-    font-size: 28px;
+    font-size: 30px; /* Botón de cerrar más grande */
     font-weight: bold;
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 18px; /* Ajuste de posición */
     cursor: pointer;
     transition: color 0.2s;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: #888;
+    color: #666; /* Gris más oscuro al pasar el ratón */
 }
 
 #modal-message {
-    margin-top: 10px;
-    font-size: 1.1em;
-    color: #555;
+    margin-top: 15px; /* Más espacio */
+    font-size: 1.2em; /* Mensaje un poco más grande */
+    color: #4D4D4D; /* Gris oscuro para el mensaje */
     text-align: center;
 }
 
@@ -189,12 +196,13 @@ h1::after {
 
     .semester {
         min-width: 250px;
+        max-width: none; /* Eliminar el max-width para pantallas más pequeñas */
     }
 }
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .semester {
@@ -218,16 +226,31 @@ h1::after {
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 2em;
         margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+
+    h1::after {
+        width: 70px;
+        height: 4px;
     }
 
     .semester h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
+        padding: 15px;
     }
 
     .course-item {
-        font-size: 0.9em;
-        padding: 10px 12px;
+        font-size: 0.95em;
+        padding: 12px 15px;
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+
+    #modal-message {
+        font-size: 1em;
     }
 }
